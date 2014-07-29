@@ -5,6 +5,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>logmeinto</title>
+    <script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -24,23 +25,33 @@
   <body>
 
     <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-       
+      <h1>'Site Under Construction!</h1>
+        <form class="signupform">
+            Username: <input type="text" name="username" id="regname" placeholder="Username" required="yes"> <br>
+            Password: <input type="text" name="password" id="regpassword" placeholder="Password" required="yes"> <br>
+                email: <input type="text" name="email" id="regemail" placeholder="ianyad@exmp.com" required="yes"> <br>
+                       <input type="submit" class="regUser" value="Register">
+        </form>
 
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
-    </div>
+        <form class="signInform">
+            Username: <input type="text" name="username2" id="username" placeholder="Username" required="yes"> <br>
+            Password: <input type="text" name="password2" id="password2" placeholder="Password" required="yes"> <br>
+                      <input type="submit" class="logmein" value="Login">
+        </form>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
+    <script src="../bower_components/backbone/backbone.js"></script>
+    <script src="../bower_components/handlebars/handlebars.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
+        <script src="scripts/model..js"></script>
+        <script src="scripts/register_view.js"></script>
+        <script src="scripts/webRouter.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
