@@ -1,16 +1,16 @@
 var RegView = Backbone.View.extend ({
 
-    el: '.maincontain',
+    el: '.maincontain', //defines element where data will be dumped
 
     events: {
-        'click .regUser ': 'createNewuser',
-        'click .logmein': 'login',
+        'click .regUser ': 'createNewuser', //when clicking createNewuser the class submits the data entered by the user.
+        'click .logmein': 'login', //when clicking .logmein the class is triggered to log the user into the webapp.
     },
 
-    initialize: function (){
+    initialize: function (){ 
         $('.signupform').show();
     },
-
+//initializes the signupform for user registration.
     render:function (){
     },
 

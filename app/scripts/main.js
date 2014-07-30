@@ -3,7 +3,7 @@ Parse.initialize("9coNa0L8MQ8nm2CvMJfomY6Mnr0GnuBi9PVGxwZL", "GN4iNmMBXWZoY6roD3
 
 var cool_users = new UserCollection();
 
-/* GET ALL THE USER DATA */
+//retrieves user data
 cool_users.fetch().done(function (){
 			window.router = new webRouter();
 			Backbone.history.start();

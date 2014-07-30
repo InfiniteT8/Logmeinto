@@ -2,10 +2,9 @@ var webRouter = Backbone.Router.extend ({
 	routes: {
 		'' : 'register',
 		'login' : 'login',
-		'admin/:id' : 'admin',
 	},
-
-	signUp: function () {
+//routes user to register, login, and admin sessions.
+	register: function () {
 					$('.signupform').show();
 					$('.signinform').hide();
 			new RegView();

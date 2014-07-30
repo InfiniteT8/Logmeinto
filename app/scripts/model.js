@@ -15,10 +15,9 @@ var User = Parse.Object.extend({
   }
 });
 
-var Users = Parse.Collection.extend({
+var UserCollection = Parse.Collection.extend({
 
     model: User,
-
 });
 
-var cool_users = new Users();
+var cool_users = new UserCollection();
